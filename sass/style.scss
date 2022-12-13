@@ -2,9 +2,53 @@
 @import 'mixins';
 @import 'variables';
 
-* {
-	font-family: 'xxxx', sans-serif;
+
+
+body {
+	font-family: Helvetica, sans-serif;
+	font-weight: $fw-regular;
 }
+
+/* ========== NAVIGATION  ========== */
+.wrapper-outer-vertical {
+}
+.wrapper-inner-vertical {
+}
+.navbar {
+		&__header {
+		}
+		&__logo {
+		}
+		&__topic {
+		}
+		&__link {
+			&_s {
+			}
+		}
+}
+
+
+/* ========== / NAVIGATION  ========== */
+/* ========== CONTENT  ========== */
+.main-section {
+}
+.wrapper-outer {
+}
+.wrapper-inner {
+}
+.main-doc {
+		&__header {
+		}
+		&__p {
+		}
+		&__code {
+		}
+		&__list {
+		}
+}
+
+/* ========== / CONTENT  ========== */
+
 
 
 

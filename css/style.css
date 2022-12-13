@@ -308,6 +308,12 @@ template {
   display: none;
 }
 
-* {
-  font-family: "xxxx", sans-serif;
+body {
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
 }
+
+/* ========== NAVIGATION  ========== */
+/* ========== / NAVIGATION  ========== */
+/* ========== CONTENT  ========== */
+/* ========== / CONTENT  ========== */
