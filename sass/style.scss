@@ -2,7 +2,6 @@
 @import 'mixins';
 @import 'variables';
 
-
 * {
 	box-sizing: border-box;
 }
@@ -12,20 +11,14 @@ body {
 }
 
 /* ========== NAVIGATION  ========== */
-.wrapper-outer-vertical {
-	
-}
-.wrapper-inner-vertical {
 
-}
 .navbar {
 		position: fixed;
     top: 0;
     left: 0;
 		width: 340px;
 		height: 100vh;
-    background-color: #ffffff;
-		
+    background-color: #ffffff;		
 		&__header {
 			font-size: 24px;
 			color: $col-dark-blue;
@@ -50,9 +43,8 @@ body {
 			height: calc(100vh - 79px);
 			overflow: scroll;
 			overflow-x: hidden;
-			& li {
-				// width: 272px;
-			}
+			border-right: 1px solid #EBEBEC;
+			z-index: 5;
 		}
 		&__link {
 			display: block;
@@ -61,8 +53,7 @@ body {
 			font-weight: 400;
 			font-size: 16px;
 			line-height: 46px;
-			padding-left: 16px;
-			
+			padding-left: 16px;			
 			color: $col-dark-blue;
 			&:hover{
 				border-radius: 8px;
@@ -89,52 +80,64 @@ body {
 		width: 100vw;
     height: 300px;
 		position: static;
-		&__header {
-
-		}
-		&__logo {
-
-		}
-		&__topic {
-
-		}
 		& ul {
 			height: 221px;
-			& li {
-			}
 		}
 		&__link {
 			width: 92vw;
 		}
-}
+	}
 }
 
 /* ========== / NAVIGATION  ========== */
 /* ========== CONTENT  ========== */
-.main-section {
-	
-}
-.wrapper-outer {
-}
-.wrapper-inner {
-}
+
 .main-doc {
 	position: absolute;
 	margin: 0 0 0 340px;
 	padding: 80px 50px 0 50px;
 		&__header {
+			font-weight: $fw-bold;
+			font-size: 32px;
+			line-height: 40px;
+			color: $col-dark-blue;
 		}
 		&__p {
+			font-size: 16px;
+			line-height: 24px;
+			color: $col-dark-grey;
+			padding: 0 0 0 15px;
 		}
 		&__code {
+			display: block;
+			background-color: $col-light-blue;
+			border-radius: 8px;
+			padding: 12px;
+			margin: 10px 0 10px 10px;
+			word-wrap: break-word;
 		}
 		&__list {
+			font-size: 16px;
+			line-height: 24px;
+			color: $col-dark-grey;
+			& li {
+				padding: 10px 0;
+			}
+			& > li {			
+				& > p {
+					margin: 5px 0;
+				}
+			}
 		}
+}
+#Data_types > article > ul > li {
+	padding: 0 0;
 }
 @media (max-width: 750px) {
 	.main-doc {
 		margin: 0 0 0 0;
 		position: initial;
+		padding: 40px 25px 0 25px;
 	}
 }
 /* ========== / CONTENT  ========== */
